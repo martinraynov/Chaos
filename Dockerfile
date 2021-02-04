@@ -31,3 +31,4 @@ EXPOSE 5000
 ENV CHAOS_CONFIG_FILE=default_settings.py
 ENV PYTHONPATH=.
 CMD ["uwsgi", "--mount", "/=chaos:app", "--http", "0.0.0.0:5000", "--http-chunked-in"]
+
